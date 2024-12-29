@@ -1,0 +1,11 @@
+aws_region = "us-east-1"
+vpc_cidr   = "10.1.0.0/16"
+vpc_name   = "terraform-vpc"
+# IGW_name            = "terraform-igw"
+azs                 = ["us-east-1a", "us-east-1b", "us-east-1c"]
+public_subnet_cidr  = ["10.1.1.0/24", "10.1.2.0/24", "10.1.3.0/24"]
+private_subnet_cidr = ["10.1.10.0/24", "10.1.20.0/24", "10.1.30.0/24"]
+Main_Routing_Table  = "Terraform_Main_table-testing"
+key_name            = "aws-key"
+environment         = "dev"
+ingress_value       = ["80", "8080", "443", "8443", "22", "3306", "1900", "1443"]
